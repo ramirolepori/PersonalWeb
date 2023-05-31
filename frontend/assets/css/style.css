@@ -3,12 +3,12 @@
 /* Colores */
 
 :root {
-    --primary-color: #192A56;  /* Azul primario */
-    --secondary-color: #273C75;  /* Azul secundario */
+    --primary-color: #fff;  /* Azul primario */
+    --secondary-color: #5a6c9b;  /* Azul secundario */
     --text-color: #fff;  /* Color de texto */
     --background-color: #111;  /* Color de fondo oscuro */
     --navbar-color: #333;  /* Color de la barra de navegación */
-    --link-color: #192A56;  /* Color de enlaces */
+    --link-color: #475b8d;  /* Color de enlaces */
   }
   
   /* Tipografía */
@@ -55,7 +55,7 @@
   }
   
   nav ul li a {
-    color: #fff;
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s;
   }
@@ -77,69 +77,6 @@
   
   .section p {
     margin-bottom: 20px;
-  }
-  
-  /* Estilos de formulario de contacto */
-  
-  .contact-form {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: var(--primary-color);
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .contact-form input[type="submit"] {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .contact-form input[type="submit"]:hover {
-    background-color: var(--secondary-color);
-  }
-  
-  .contact-form p {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .contact-info {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .contact-info p {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-info a {
-    color: var(--primary-color);
-    text-decoration: none;
-  }
-  
-  .contact-info a:hover {
-    text-decoration: underline;
   }
   
   /* Estilos de enlaces */

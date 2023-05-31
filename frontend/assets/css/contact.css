@@ -1,0 +1,88 @@
+/* frontend/assets/css/contact.css */
+
+.contact-container {
+  display: flex;
+}
+
+.contact-container .form-container {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.contact-container .form-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.contact-container .form-container input[type="text"],
+.contact-container .form-container input[type="email"],
+.contact-container .form-container textarea {
+  width: 50%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+.contact-container .form-container input[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin-top: 10px;
+}
+
+.contact-container .form-container input[type="submit"]:hover {
+  background-color: #345995;
+}
+
+.contact-container .image-container {
+  width: 50%;
+}
+
+.contact-container .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-container .form-container,
+  .contact-container .image-container {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.contact-container {
+  display: flex;
+}
+
+.form-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.image-container {
+  flex: 1;
+  order: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 45%;
+  height: auto;
+  opacity: 0.5;
+}
