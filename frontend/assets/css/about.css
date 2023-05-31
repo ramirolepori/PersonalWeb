@@ -1,0 +1,90 @@
+
+/* Colores */
+:root {
+    --primary-color: #192A56;  /* Azul primario */
+    --secondary-color: #273C75;  /* Azul secundario */
+    --text-color: #fff;  /* Color de texto */
+    --background-color: #111;  /* Color de fondo oscuro */
+    --navbar-color: #333;  /* Color de la barra de navegación */
+    --link-color: #192A56;  /* Color de enlaces */
+  }
+  
+  /* Tipografía */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  /* Estilos generales */
+  body {
+    font-family: "Helvetica Neue", 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: var(--primary-color);
+  }
+  
+  /* Estilos de navegación */
+  nav {
+    background-color: var(--navbar-color);
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Estilos de secciones */
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de enlaces */
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos específicos para projects.html */
+  #about {
+    text-align: center;
+  }
+  

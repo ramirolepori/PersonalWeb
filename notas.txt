@@ -1,2 +1,8 @@
 Dominio: ramirolepori.tech
 registrado en hostinger con cuenta gmail leporiramiro@gmail.com
+
+Hosteado en 000webhost
+
+Certificado en cloudfire
+usuario: leporiramiro@gmail.com
+contraseña: zDj4T9YxnJtLmQr!
