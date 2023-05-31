@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">My Projects</a></li>
-          <li><a href="certifications.html">My Certifications</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
           <li><a href="contact.html">Contact Me</a></li>
         </ul>
       </nav>

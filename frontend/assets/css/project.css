@@ -3,7 +3,7 @@
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-row-gap: 30px;
   }
   @media screen and (max-width: 768px) {
     .projects-container {
@@ -19,10 +19,12 @@
   
   .projects-item {
     position: relative;
-    width: 100%;
-    padding-bottom: 125%; /* Proporción de aspecto para mantener un rectángulo vertical */
-    overflow: hidden;
+    width: 85%;
+    padding-bottom: 100%; /* Proporción de aspecto para mantener un rectángulo vertical */
     border-radius: 5px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .projects-item img {
