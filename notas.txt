@@ -6,3 +6,7 @@ Hosteado en 000webhost
 Certificado en cloudfire
 usuario: leporiramiro@gmail.com
 contraseña: zDj4T9YxnJtLmQr!
+
+MongoDB
+usuario: ramirolepori
+contraseña: FLqSiz7UVwIeX2NP
