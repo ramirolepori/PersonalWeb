@@ -16,11 +16,12 @@ mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 
 // Definir el esquema de tu colección
 const projectSchema = new mongoose.Schema({
+  _id: String,
   name: String,
   picture: String,
   description: String,
   url: String,
-  fechaCreacion: { type: Date, default: Date.now }
+  date: { type: Date, default: Date.now }
 });
 
 // Definir el modelo basado en el esquema
