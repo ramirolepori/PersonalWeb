@@ -1,7 +1,24 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const db = require('./src/lib/DBprov.js');
+const path = require('path');
+const dbp = require('./src/lib/DBproj.js');
+const dbc = require('./src/lib/DBcert.js');
+const sendEmail = require('./src/lib/mail.js');
+
+// Middleware para servir archivos estáticos
+app.use('/images', express.static(path.join(__dirname, 'src/images')));
+
+// Configurar CORS para permitir solicitudes desde 'http://127.0.0.1:5500'
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
+
+// Parsear el cuerpo de las solicitudes con el formato de formulario (application/x-www-form-urlencoded)
+app.use(express.urlencoded({ extended: true }));
 
 // Rutas
 app.get('/', (req, res) => {
@@ -11,10 +28,34 @@ app.get('/', (req, res) => {
 // Ruta para obtener los proyectos desde la base de datos
 app.get('/projects', async (req, res) => {
   try {
-    const projects = await db.getProjects();
+    const projects = await dbp.getProjects();
     res.json(projects);
   } catch (error) {
     res.status(500).json({ error: 'Error al obtener los proyectos' });
+  }
+});
+
+// Ruta para obtener los certificados desde la base de datos
+app.get('/certificates', async (req, res) => {
+  try {
+    const certificates = await dbc.getCertificates();
+    res.json(certificates);
+  } catch (error) {
+    res.status(500).json({ error: 'Error al obtener los certificados' });
+  }
+});
+
+// Ruta para enviar el correo electrónico desde el formulario de contacto
+app.post('/send-email', async (req, res) => {
+  const { name, email, message } = req.body;
+
+  try {
+    await sendEmail(name, email, message); // Llamar a la función sendEmail
+    console.log('Email sent successfully');
+    res.sendStatus(200);
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.sendStatus(500);
   }
 });
 
