@@ -1,28 +1,20 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
 
-  const submitBtn = document.getElementById('submit-btn');
-  
-    submitBtn.addEventListener('click', async () => {
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-  
-      // Enviar el formulario de contacto al servidor
-      const response = await fetch('/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ name, email, message })
-      });
-  
-      if (response.ok) {
-        alert('Mensaje enviado correctamente.');
-        // Puedes redirigir a otra página después de enviar el mensaje si lo deseas
-        // window.location.href = '/gracias.html';
-      } else {
-        alert('Error al enviar el mensaje. Por favor, inténtalo de nuevo.');
-      }
-    });
+  form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Aquí puedes agregar tus validaciones si lo deseas
+
+      // Enviar formulario a través de Formspr.ee
+      form.submit();
+
+      // Borrar los campos después de enviar
+      nameInput.value = "";
+      emailInput.value = "";
+      messageInput.value = "";
   });
-  
+});

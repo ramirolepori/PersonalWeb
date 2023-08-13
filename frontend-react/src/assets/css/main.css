@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #192A56;  /* Azul primario */
+  --secondary-color: #273C75;  /* Azul secundario */
+  --text-color: #fff;  /* Color de texto */
+  --background-color: #111;  /* Color de fondo oscuro */
+  --navbar-color: #333;  /* Color de la barra de navegación */
+  --link-color: #192A56;  /* Color de enlaces */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: "Helvetica Neue", 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+#index-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  #index-section .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #index-section .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  #index-section .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  #index-section .presentation {
+    text-align: center;
+    color: var(--text-color);
+    z-index: 1;
+    position: relative;
+  }
+  
+  #index-section .presentation h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  #index-section .presentation p {
+    font-size: 18px;
+  }
+  
+  #index-section .presentation .explore-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  #index-section .presentation .explore-button:hover {
+    background-color: #345995;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #index-section .presentation h1 {
+      font-size: 24px;
+    }
+  
+    #index-section .presentation p {
+      font-size: 16px;
+      line-height: 2;
+    }
+  
+    #index-section .presentation .explore-button {
+      font-size: 14px;
+      padding: 20px 40px;
+      font-size: 18px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    #index-section .presentation h1 {
+      font-size: 35px;
+      margin-bottom: 90px;
+
+    }
+  
+    #index-section .presentation p {
+      font-size: 16px;
+
+    }
+  
+    #index-section .presentation .explore-button {
+      margin-top: 10px;
+    }
+  }

@@ -45,19 +45,7 @@ app.get('/certificates', async (req, res) => {
   }
 });
 
-// Ruta para enviar el correo electrónico desde el formulario de contacto
-app.post('/send-email', async (req, res) => {
-  const { name, email, message } = req.body;
 
-  try {
-    await sendEmail(name, email, message); // Llamar a la función sendEmail
-    console.log('Email sent successfully');
-    res.sendStatus(200);
-  } catch (error) {
-    console.error('Error sending email:', error);
-    res.sendStatus(500);
-  }
-});
 
 // Iniciar el servidor
 app.listen(port, () => {
