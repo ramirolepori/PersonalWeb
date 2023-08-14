@@ -14,3 +14,7 @@ contraseña: FLqSiz7UVwIeX2NP
 Formularios en https://formspree.io
 usuario: leporiramiro@gmail.com
 contraseña: bywhoz-Tergig-xyqki9
+
+Gmail:
+user: ramiroleporitech@gmail.com
+contraseña: Contraregular321

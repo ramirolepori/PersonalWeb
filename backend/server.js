@@ -4,14 +4,13 @@ const port = 3000;
 const path = require('path');
 const dbp = require('./src/lib/DBproj.js');
 const dbc = require('./src/lib/DBcert.js');
-const sendEmail = require('./src/lib/mail.js');
 
 // Middleware para servir archivos estáticos
 app.use('/images', express.static(path.join(__dirname, 'src/images')));
 
 // Configurar CORS para permitir solicitudes desde 'http://127.0.0.1:5500'
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3001');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();
