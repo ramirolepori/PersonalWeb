@@ -1,11 +1,14 @@
 import React from 'react';
 import '../assets/css/about.css'; // Ajusta la ruta del archivo CSS según tu estructura de archivos
 import chicaImage from '../images/chica.png'; // Ajusta la ruta de la imagen según tu estructura de archivos
+import { useTranslation } from "react-i18next";
+import './i18n'
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <section id="about" className="section">
-      <h2>About Me</h2>
+      <h2>{t("h2About1")}</h2>
       <div className="about-container">
         <div className="text-container">
           <p>Welcome to my portfolio website!</p>

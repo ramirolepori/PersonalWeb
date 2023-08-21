@@ -7,6 +7,8 @@ import Certifications from './components/Certifications';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './assets/css/style.css';
+import './components/i18n'
+
 
 function App() {
   return (
