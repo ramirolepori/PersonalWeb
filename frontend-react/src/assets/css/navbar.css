@@ -1,0 +1,117 @@
+/* Estilos para el Navbar */
+.navbar {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    /* Centra horizontalmente en relación con el padre */
+    transform: translateX(-50%);
+    /* Corrige la centración horizontal */
+    width: 75%;
+    /* Ocupa el 75% del ancho de la pantalla */
+    height: 60px;
+    background-color: #18181D4D;
+    /* Fondo con transparencia */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Espacio de relleno */
+    z-index: 1000;
+    /* Para estar por encima del contenido */
+}
+
+
+/* Estilos para los elementos <ul> y <li> en la parte izquierda */
+.nav-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-left li {
+    margin-right: 20px;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-left a:hover {
+    color: var(--secondary-color);
+}
+
+/* Estilos para la parte derecha */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right .social-icons a {
+    text-decoration: none;
+    margin-right: 10px;
+    /* Espacio entre los iconos */
+    color: #FFFFFF;
+    font-size: 24px;
+    /* Tamaño de fuente de los iconos */
+}
+.linea-vertical {
+    border-radius: 22px;
+    border: 1px solid #383737;
+    height: 30px; /* Altura de la línea (ajusta según tus necesidades) */
+    margin: 20px; /* Espacio entre la línea y los elementos */
+  }
+
+/* Estilos para el switch */
+.dark-mode-toggle {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Estilos para la lista desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #18181D4D;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Muestra la lista desplegable al pasar el mouse */
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #5a6c9b;
+    /* Cambia el color al pasar el mouse */
+}

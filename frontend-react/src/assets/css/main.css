@@ -1,11 +1,6 @@
-:root {
-  --primary-color: #192A56;  /* Azul primario */
-  --secondary-color: #273C75;  /* Azul secundario */
-  --text-color: #fff;  /* Color de texto */
-  --background-color: #111;  /* Color de fondo oscuro */
-  --navbar-color: #333;  /* Color de la barra de navegación */
-  --link-color: #192A56;  /* Color de enlaces */
-}
+@import 'style.css';
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -18,98 +13,84 @@ body {
 }
 
 #index-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    position: relative;
-  }
-  
-  #index-section .image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
 
-  #index-section .image-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  #index-section .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  #index-section .presentation {
-    text-align: center;
-    color: var(--text-color);
-    z-index: 1;
-    position: relative;
-  }
-  
+#index-section .presentation {
+  text-align: center;
+  color: var(--text-color);
+  z-index: 1;
+  position: relative;
+}
+
+#index-section .presentation h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+.presentation-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.left-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.colored-text {
+  color: #808080;
+}
+
+.second-colored-text {
+  color: #FFFFFF;
+}
+
+.my-button {
+  height: 50px;
+  width: 200px;
+  margin: 20px 0 0 0;
+  padding: 16px 0px;
+  gap: 8px;
+  border-radius: 26px;
+  background: var(--gradient-dark-gradient, linear-gradient(180deg, #EEE 0%, #EFEFEF 100%));
+  box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(255, 255, 255, 0.08) inset, 0px 1px 2px 0px rgba(255, 255, 255, 0.02) inset;
+}
+
+.right-content {
+  width: 40%;
+}
+
+.right-content img {
+  width: auto;
+  height: 350px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: 1px solid #383737;
+  background: #151515;
+}
+
+@media only screen and (max-width: 768px) {
   #index-section .presentation h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 24px;
   }
-  
-  #index-section .presentation p {
-    font-size: 18px;
-  }
-  
-  #index-section .presentation .explore-button {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  #index-section .presentation .explore-button:hover {
-    background-color: #345995;
-  }
+}
 
-  @media only screen and (max-width: 768px) {
-    #index-section .presentation h1 {
-      font-size: 24px;
-    }
-  
-    #index-section .presentation p {
-      font-size: 16px;
-      line-height: 2;
-    }
-  
-    #index-section .presentation .explore-button {
-      font-size: 14px;
-      padding: 20px 40px;
-      font-size: 18px;
-    }
+@media only screen and (max-width: 480px) {
+  #index-section .presentation h1 {
+    font-size: 35px;
+    margin-bottom: 90px;
+
   }
-
-  @media only screen and (max-width: 480px) {
-    #index-section .presentation h1 {
-      font-size: 35px;
-      margin-bottom: 90px;
-
-    }
-  
-    #index-section .presentation p {
-      font-size: 16px;
-
-    }
-  
-    #index-section .presentation .explore-button {
-      margin-top: 10px;
-    }
-  }
+}

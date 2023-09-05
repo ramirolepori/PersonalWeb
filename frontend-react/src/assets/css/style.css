@@ -1,95 +1,83 @@
-/* frontend/assets/css/styles.css */
-
-/* Colores */
-
 :root {
-    --primary-color: #fff;  /* Azul primario */
-    --secondary-color: #5a6c9b;  /* Azul secundario */
-    --text-color: #fff;  /* Color de texto */
-    --background-color: #111;  /* Color de fondo oscuro */
-    --navbar-color: #333;  /* Color de la barra de navegación */
-    --link-color: #475b8d;  /* Color de enlaces */
-  }
-  
-  /* Tipografía */
-  
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-  
-  /* Estilos generales */
-  
-  body {
-    font-family: "Helvetica Neue", 'Roboto', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1, h2, h3 {
-    color: var(--primary-color);
-  }
-  
-  /* Estilos de navegación */
-  
-  nav {
-    background-color: var(--navbar-color);
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: var(--secondary-color);
-  }
-  
-  /* Estilos de secciones */
-  
-  .section {
-    margin-bottom: 40px;
-  }
-  
-  .section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .section p {
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos de enlaces */
-  
-  a {
-    color: var(--link-color);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+  --primary-color: #fff;
+  /* Azul primario */
+  --secondary-color: #5a6c9b;
+  /* Azul secundario */
+  --text-color: #fff;
+  /* Color de texto */
+  --background-color: #1F1F1F;
+  /* Color de fondo oscuro */
+  --navbar-color: #333;
+  /* Color de la barra de navegación */
+  --link-color: #475b8d;
+  /* Color de enlaces */
+}
 
+/* Tipografía */
 
-  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos generales */
+
+body {
+  font-family: "Helvetica Neue", 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+
+  background-image: radial-gradient(ellipse at center 25%, rgba(233, 63, 63, 0.43) 0%,  transparent 50%),
+                    radial-gradient(ellipse at 33% 0, rgba(63, 100, 233, 0.43) 0%,  transparent 25%),
+                    radial-gradient(ellipse at 67% 0, rgba(255, 184, 0, 0.43) 0%, transparent 25%);
+  height: 33vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.components-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos de secciones */
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  display: flex;
+  margin-left: 220px;
+  font-size: 50px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.section p {
+  margin-bottom: 20px;
+}
+
+/* Estilos de enlaces */
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
