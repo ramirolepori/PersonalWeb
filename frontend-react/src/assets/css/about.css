@@ -27,6 +27,34 @@
   width: 100%;
 }
 
+.swiper-container {
+  max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding-left: 20px; /* Añade un poco de espacio en los lados si es necesario */
+  padding-right: 20px; /* Añade un poco de espacio en los lados si es necesario */
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Estilos personalizados para las diapositivas de Swiper */
+.slide {
+  /* Ancho y alto deseados para las diapositivas */
+  width: 70% !important;
+}
+
+.slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la forma en que se ajusta la imagen dentro del contenedor */
+}
+
+
+
 
 @media screen and (max-width: 768px) {
   .about-container {
