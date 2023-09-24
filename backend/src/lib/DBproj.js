@@ -20,7 +20,9 @@ const projectSchema = new mongoose.Schema({
   name: String,
   picture: String,
   description: String,
-  date: { type: Date, default: Date.now }
+  date: { type: Date, default: Date.now },
+  url: String,
+  logo: String
 });
 
 // Definir el modelo basado en el esquema

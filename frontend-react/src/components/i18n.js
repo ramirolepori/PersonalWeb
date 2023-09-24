@@ -26,6 +26,7 @@ i18n.use(initReactI18next).init({
         labelContact1: "Name:",
         labelContact2: "Email:",
         labelContact3: "Message:",
+        buttonContact1: "Send",
         pContact2: "Find me on:",
 
         liNavbar1: "Home",
@@ -51,7 +52,7 @@ i18n.use(initReactI18next).init({
         pAbout6: 'Mis habilidades técnicas abarcan desde un sólido dominio de <span>JavaScript</span> y <span>Node.js</span> para el desarrollo de backend hasta una amplia experiencia en <span>Java</span>, <span>Python</span> y la gestión de bases de datos, incluyendo <span>MongoDB</span> y <span>MySQL</span>. Además, he trabajado con plataformas como <span>Virustotal</span>, <span>AbuseIPDB</span>, <span>URLhaus</span>, entre otras, para la implementación de APIs y servicios web.',
         pAbout7: "Mi motivación radica en abordar desafíos complejos y resolverlos a través de la lógica y la programación. Mi dedicación a la resolución de problemas me distingue, y siempre busco formas creativas de superar obstáculos.",
 
-        h2Certifications1: "Mis certificaciomnes",
+        h2Certifications1: "Mis certificaciones",
         pCertifications1: "Error al obtener los datos:",
 
         h2Contact1: "Ponte en contacto",
@@ -59,6 +60,7 @@ i18n.use(initReactI18next).init({
         labelContact1: "Nombre:",
         labelContact2: "Correo electrónico:",
         labelContact3: "Mensaje:",
+        buttonContact1: "Enviar",
         pContact2: "Encuéntrame en:",
 
         liNavbar1: "Home",

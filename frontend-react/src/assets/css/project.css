@@ -2,7 +2,79 @@
 .projects-container {
   display: flex;
   flex-direction: column; /* Cambiar a dirección de columna para mostrar los proyectos uno arriba del otro */
+  align-items: center; /* Centrar horizontalmente en el contenedor */
 }
+
+.projects-item {
+  width: 1024px; /* Ancho predeterminado */
+  height: 500px; /* Alto predeterminado */
+  display: flex; /* Para que todos los proyectos tengan el mismo tamaño */
+  flex-direction: row; /* Alinear los elementos en fila */
+  justify-content: space-between; /* Espaciar los elementos horizontalmente */
+  margin-top: 15px; /* Margen superior e inferior de 10px y márgenes derecho e izquierdo de 10px */
+  background-color: #FFFFFFB2; /* Fondo color #FFFFFFB2 */
+  border-radius: 32px;
+  overflow: hidden;
+  background-color: #FFFFFFB2;
+}
+
+.projects-item img.project-image {
+  width: 40%; /* Toma el 30% del ancho del proyecto para la imagen */
+  object-fit: cover;
+  flex-shrink: 0; /* Evitar que la imagen se reduzca */
+}
+
+.projects-item .project-details {
+  flex-grow: 1; /* Para que el contenido ocupe el espacio restante */
+  padding-left: 60px; /* Espaciado interior */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column; /* Alinear los elementos en columna */
+  justify-content: flex-start; /* Alinear al principio del contenedor */
+}
+
+.projects-item img.logo {
+  width: 50px; /* Ancho para el logo */
+}
+
+.projects-item .project-title {
+  font-weight: 800;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 10px;
+  color: var(--basic-white, #FFF);
+  margin: 0; /* Eliminar el margen inferior */
+}
+
+.projects-item .project-description {
+  font-size: 16px;
+  color: var(--basic-onyx, #181818);
+}
+
+.projects-item .button-container {
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-start; /* Alinear al comienzo del contenedor */
+  margin-top: auto; /* Colocar el botón en la parte inferior */
+}
+
+.projects-item .visit-button {
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
   @media screen and (max-width: 768px) {
 
   }
@@ -10,35 +82,3 @@
   @media screen and (max-width: 480px) {
 
   }
-  
-  .projects-item {
-    display: flex; /* Para que todos los proyectos tengan el mismo tamaño */
-    align-items: center; /* Centrar verticalmente el contenido */
-    width: calc(100% - 400px); /* Ocupa casi el ancho de la pantalla con márgenes derecho e izquierdo */
-    margin: 10px 200px; /* Margen superior e inferior de 10px y márgenes derecho e izquierdo de 20px */
-    background-color: #FFFFFFB2; /* Fondo color #FFFFFFB2 */
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .projects-item img {
-    width: 30%; /* Toma la mitad del ancho del proyecto para la imagen */
-    height: auto; /* Mantener la proporción de aspecto */
-    object-fit: cover;
-  }
-
-  .project-details {
-    flex-grow: 1; /* Para que el contenido ocupe el espacio restante */
-    padding: 20px; /* Espaciado interior */
-  }
-
-  .project-title {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .project-description {
-    font-size: 16px;
-  }
-  
