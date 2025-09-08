@@ -1,9 +1,10 @@
 // DBprov.js
 
+require('dotenv').config({ path: '../../.env' });
 const mongoose = require('mongoose');
 
 // Configuración de la conexión a la base de datos
-const dbUrl = 'mongodb+srv://ramirolepori:FLqSiz7UVwIeX2NP@myweb.gzp1hef.mongodb.net/myWeb?retryWrites=true&w=majority'; // URL de conexión de MongoDB Atlas
+const dbUrl = process.env.DB_URL;
 
 // Conexión a la base de datos
 mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })

@@ -40,8 +40,8 @@ const Contact = () => {
 
       <p>{t("pContact2")}</p>
       <ul>
-        <li><a href="https://www.linkedin.com/your-profile-link">LinkedIn</a></li>
-        <li><a href="https://github.com/your-github-profile">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ramirolepori">LinkedIn</a></li>
+        <li><a href="https://github.com/ramirolepori">GitHub</a></li>
       </ul>
     </section>
   );
