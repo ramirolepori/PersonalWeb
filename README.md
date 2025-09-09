@@ -26,61 +26,6 @@ Este proyecto fue construido utilizando un stack MERN, entre otras tecnologías:
     *   Git y GitHub: Para el control de versiones y la colaboración.
     *   (Opcional: puedes añadir aquí donde lo tienes desplegado, ej: Vercel, Netlify, Heroku)
 
-## Cómo Empezar
-
-**Nota:** La carpeta `frontend/` ha sido eliminada y reemplazada por la aplicación de React en `frontend-react/`.
-
-Para ejecutar este proyecto localmente, sigue estos pasos:
-
-### Prerrequisitos
-
-Asegúrate de tener Node.js y npm instalados en tu máquina.
-
-### Instalación
-
-1.  **Clona el repositorio:**
-    ```bash
-    git clone https://github.com/ramirolepori/app.git
-    cd app
-    ```
-
-2.  **Instala las dependencias del backend:**
-    ```bash
-    npm install
-    ```
-
-3.  **Instala las dependencias del frontend:**
-    ```bash
-    cd frontend-react
-    npm install
-    ```
-
-### Configuración del Entorno
-
-1.  **Crea un archivo `.env` en el directorio `backend`:**
-    Copia el contenido de `backend/.env.example` y pégalo en un nuevo archivo llamado `backend/.env`.
-
-2.  **Configura la variable de entorno:**
-    Reemplaza los valores en el archivo `.env` con tu propia cadena de conexión de MongoDB.
-    ```
-    DB_URL=mongodb+srv://<user>:<password>@<cluster-url>/<database-name>?retryWrites=true&w=majority
-    ```
-
-### Ejecución
-
-1.  **Inicia el servidor de backend:**
-    Desde el directorio raíz, ejecuta:
-    ```bash
-    node backend/server.js
-    ```
-    El servidor se iniciará en `http://localhost:3000`.
-
-2.  **Inicia la aplicación de frontend:**
-    En una nueva terminal, desde el directorio `frontend-react`, ejecuta:
-    ```bash
-    npm start
-    ```
-    La aplicación se abrirá en `http://localhost:3001`.
 
 ## Contacto
 
